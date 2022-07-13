@@ -8,12 +8,15 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
     "sourceMap": true,
-    "isolatedModules": true,
     "lib": ["esnext", "dom"],
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+    "declaration": true,
+    "outDir": "dist",
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "outFile": "dist/electron-server"
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "build"]
+  "include": ["lib/**/*.ts", "lib/**/*.d.ts", "lib/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
 }

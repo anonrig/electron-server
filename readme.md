@@ -44,9 +44,6 @@ app.whenReady().then(() => {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
-    webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
-    },
   });
   
   // Visit the custom scheme

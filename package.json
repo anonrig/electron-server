@@ -18,16 +18,17 @@
     "dist"
   ],
   "main": "./dist/electron-server.umd.js",
-  "module": "./dist/electron-server.es.js",
+  "module": "./dist/electron-server.mjs",
+  "types": "./dist/electron-server.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/electron-server.es.js",
+      "import": "./dist/electron-server.mjs",
       "require": "./dist/electron-server.umd.js"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && tsc",
     "preview": "vite preview",
     "format": "rome format . --indent-style space --write",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -38,6 +39,7 @@
     "fastify": "^4.2.1",
     "rome": "0.7.0-next",
     "tsup": "^6.1.3",
-    "vite": "^2.9.14"
+    "typescript": "^4.7.4",
+    "vite": "^3.0.0"
   }
 }
