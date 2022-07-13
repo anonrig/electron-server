@@ -1,6 +1,6 @@
 {
   "name": "electron-server",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Use Fastify inside an Electron app without consuming a port",
   "homepage": "https://github.com/anonrig/electron-server#readme",
   "bugs": {
